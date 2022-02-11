@@ -6,29 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-//  numbers=[1,2,3,4,5];
-//  c=3;
-// clr="red";
-// arr=[{
-//   Company:'IBM',
-//   Contact:'Arvind Krishna',
-//   Country:'India'
-// },{
-//   Company:'TCS',
-//   Contact:'Ratan Tata',
-//   Country:'India'
-// },{
-//   Company:'Facbook',
-//   Contact:'Mark',
-//   Country:'Usa'
-// },{
-//   Company:'Microsoft',
-//   Contact:'Bill Gate',
-//   Country:'Usa'
-// }];
-// signUp(logIn:any)
+// signup(login:any)
 // {
-//   console.log(logIn);
+//   console.log(login);
 // }
-
 }

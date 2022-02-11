@@ -24,11 +24,14 @@
     <a href="" routerLink="/contact">Contact</a>
     <a href="" routerLink="/help">Help</a>
 </div> -->
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<!-- <form action="" #logIn="ngForm" (ngSubmit)="signUp(logIn.value)">
-    <input type="text" placeholder="First name" ngModule>
-    <input type="password" placeholder="password" ngModule>
-    <button>Submit</button> -->
-<!-- </form> -->
-<app-footer></app-footer>
+<!-- <form action="" #login="ngForm" (ngSubmit)="signup(login)">
+    <input type="text" placeholder="First Name" name="fname" ngModel minlength="5" #name="ngModel">
+    <br>
+    <small *ngIf="name.invalid">Please Enter valid Name</small>
+    <br>
+    <input type="password" placeholder="password" name="pass" ngModel>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+</form> -->
+<app-test></app-test>
