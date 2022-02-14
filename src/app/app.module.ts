@@ -7,6 +7,7 @@ import { TestComponent } from './test/test.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TempletComponent } from './templet/templet.component';
 import { ReactiveComponent } from './reactive/reactive.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReactiveComponent } from './reactive/reactive.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DataServiceService],
   bootstrap: [AppComponent]

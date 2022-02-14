@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+// import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { DataServiceService } from '../data-service.service';
 
 @Component({
@@ -8,23 +8,26 @@ import { DataServiceService } from '../data-service.service';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-  logIn!:FormGroup;
+  // logIn!:FormGroup;
+  data:any;
   constructor(service:DataServiceService) { 
-    
+    service.getData().subscribe((info)=>{
+      this.data=info;
+    });
   }
 
   ngOnInit(): void {
-    this.logIn=new FormGroup({
-      'fname':new FormControl(null,[Validators.minLength(3),Validators.required]),
-      'lname':new FormControl(null),
-      'age':new FormControl(null),
-      'address':new FormGroup({
-      'street':new FormControl(null),
-      'state':new FormControl(null)
-      })
-    });
+    // this.logIn=new FormGroup({
+    //   'fname':new FormControl(null,[Validators.minLength(3),Validators.required]),
+    //   'lname':new FormControl(null),
+    //   'age':new FormControl(null),
+    //   'address':new FormGroup({
+    //   'street':new FormControl(null),
+    //   'state':new FormControl(null)
+    //   })
+    // });
   }
-  onSubmit(){
-    console.log(this.logIn);
-  }
+  // onSubmit(){
+  //   console.log(this.logIn);
+  // }
 }

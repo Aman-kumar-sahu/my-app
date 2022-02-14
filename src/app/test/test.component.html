@@ -1,8 +1,8 @@
-<form action="" [formGroup]="logIn" (ngSubmit)="onSubmit()">
+<!-- <form action="" [formGroup]="logIn" (ngSubmit)="onSubmit()">
     <input type="text" placeholder="First Name" formControlName="fname">
     <br>
-    <!-- <small *ngIf="name.invalid">Please Enter valid Name</small> -->
-    <br>
+    <small *ngIf="name.invalid">Please Enter valid Name</small>
+    <<br>
     <input type="text" placeholder="last name" formControlName="lname">
     <br>
     <br>
@@ -15,4 +15,8 @@
     <input type="text" placeholder="state" formControlName="state">
     <br><br>
     <button type="submit">Submit</button>
-</form>
+</form>  -->
+<p>{{data}}</p>
+<ul *ngFor="let i of data">
+    {{i.name}}
+</ul>
